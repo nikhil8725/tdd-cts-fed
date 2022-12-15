@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+
+.blurredBGImage {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    width: 100%;
+    height: 100%;
+}
+
+.title span {
+    font-family: 'Roboto Black', sans-serif;
+    color: #2C2E2F;
+    letter-spacing: 7px;
+    font-size: 50px;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+}
+
+.title span::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    height: 0.5rem;
+    width: 100%;
+    background: #647D5B;
+    z-index: -1;
+    transition: height 0.7s;
+}
+
+.title-blue span::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    height: 0.5rem;
+    width: 100%;
+    background: #90A8CE;
+    z-index: -1;
+}
+
+.title-orange span::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    height: 0.5rem;
+    width: 100%;
+    background: #EFCDB0;
+    z-index: -1;
+}
+
+.title span:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    height: 1rem;
+    width: 100%;
+    background: #647D5B;
+    z-index: -1;
+}
+
+.title-blue span:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    height: 1rem;
+    width: 100%;
+    background: #90A8CE;
+    z-index: -1;
+}
+
+.title-orange span:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    height: 1rem;
+    width: 100%;
+    background: #EFCDB0;
+    z-index: -1;
+}
+
+.label {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    color: #979797;
+    text-align: left;
+    font-weight: normal;
+}
+
+
+.fill {
+    height: 100vh;
+}
+
+.btn {
+    border: 2px solid #647D5B;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.btn-blue {
+    border: 2px solid #90A8CE;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.btn-orange {
+    border: 2px solid #EFCDB0;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-family: 'Roboto Black', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.slide {
+    border-color: #647D5B;
+    color: #647D5B;
+    transition: background-color 0.7s;
+}
+
+.slide-blue {
+    border-color: #90A8CE;
+    color: #90A8CE;
+    transition: background-color 0.7s;
+}
+
+.slide-orange {
+    border-color: #EFCDB0;
+    color: #EFCDB0;
+    transition: background-color 0.7s;
+}
+
+.slide:hover {
+    background-color: #647D5B;
+    color: white;
+}
+
+.slide-blue:hover {
+    background-color: #90A8CE;
+    color: white;
+}
+
+.slide-orange:hover {
+    background-color: #EFCDB0;
+    color: white;
+}
+
+.box {
+    width: 470px;
+    height: 470px;
+    position: absolute;
+    box-shadow: 10px 10px #647D5B;
+    transition: box-shadow;
+    transition: box-shadow 1s;
+}
+
+.box-blue {
+    width: 470px;
+    height: 470px;
+    position: absolute;
+    box-shadow: 10px 10px #90A8CE;
+    transition: box-shadow 1s;
+}
+
+.box-orange {
+    width: 470px;
+    height: 470px;
+    position: absolute;
+    box-shadow: 10px 10px #EFCDB0;
+    transition: box-shadow 1s;
+}
+
+.imgBox {
+    z-index: 1;
+    top: 17%;
+    right: 17%;
+}
+
+.zoom-in {
+    width: 470px;
+    height: 470px;
+    position: absolute;
+    box-shadow: 10px 10px #EFCDB0;
+}
+
+.box:hover {
+    box-shadow: 20px 20px #647D5B;
+    
+}
+
+.box-blue:hover {
+    box-shadow: 20px 20px #90A8CE;
+}
+
+.box-orange:hover {
+    box-shadow: 20px 20px #EFCDB0;
+}
+
+@media only screen and (max-width: 800px) {}
+
+@media only screen and (max-width: 420px) {
+    .imgBox {
+        top: 5%;
+        width: 70%;
+        height: auto;
+    }
+
+    .leftClass {
+        order: 2;
+        padding: 40% 5px 5px 5px;
+    }
+
+    .blurredImageClass {
+        max-height: 30%
+    }
+    .badge {
+        display: none
+    }
+}
+
+.mySlides {
+    display: none;
+}
+
+.w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0
+}
